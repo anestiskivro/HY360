@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Service</title>
+    <link rel="stylesheet" href="css/evol_page.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Welcome to our Car Rental Service!</h2>
+    <p>Please choose a category:</p>
+
+    <div class="category-buttons">
+        <button class="category-button" onclick="showVehicles('cars')">Cars</button>
+        <button class="category-button" onclick="showVehicles('bikes')">Motorcycles</button>
+        <button class="category-button" onclick="showVehicles('scooters')">Bikes</button>
+        <button class="category-button" onclick="showVehicles('motorcycles')">Scooters</button>
+    </div>
+
+    <div class="vehicle-list" id="vehicleList">
+       
+    </div>
+    
+    
+</div>
+    
+    <div class="damage-declaration" id="damageDeclaration">
+        <h2>Damage Report</h2>
+        <p id="damageMessage">Report any damage to the vehicle:</p>
+        <form id="damageForm">
+                <label for="damageDescription">Damage Description:</label>
+                <textarea id="damageDescription" name="damageDescription" required></textarea>
+
+                <button type="button" onclick="submitDamageDeclaration()">Submit Damage Declaration</button>
+        </form>         
+    </div>
+    
+    <div class="accident-declaration" id="accidentDeclaration">
+        <h2>Accident Report</h2>
+        <p id="accidentMessage">In case of an accident:</p>
+        <form id="accidentForm">
+            <label for="insurancePaid">Has the insurance been paid?</label>
+            <select id="insurancePaid" name="insurancePaid" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <button type="button" onclick="submitAccidentDeclaration()">Submit Accident Declaration</button>
+        </form>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="javascript/evol_page.js"></script>
+
+</body>
+</html>
+

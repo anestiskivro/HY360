@@ -1,0 +1,6 @@
+DB_init\DB_initialization.class
+tables\ClientTable.class
+mainClasses\JSON_Converter.class
+mainClasses\Client.class
+database\DB_setup.class
+servlets\registerClient.class
